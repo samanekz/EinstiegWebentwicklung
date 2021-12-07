@@ -1,25 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 * {
   box-sizing: border-box;
-  border-radius: 0px 5px 0px 5px;
 }
+
 body {
   background-color: #0b090a;
   color: #fafdff;
   font-family: "Lato", sans-serif;
+  margin: 0.4em;
+  position: relative;
 }
 
 @media screen and (min-width: 0em) {
-  .cont-img {
+  .main_nav {
+    background-color: #0b090a;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+
+    padding-bottom: 0.4em;
+  }
+  /*   
+  .main_nav a:hover {
+    background-color: #18728c;
+  } */
+
+  .main_nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  /* 
+  .main_nav a:not(:first-child) {
     display: none;
   }
+*/
+
+  .main_nav .active {
+    color: red;
+    border-left: 3px solid red;
+  }
+
+  .main_nav .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /*
+  .main_nav a.icon {
+    float: right;
+    display: block;
+
+    font-size: 1.6em;
+  }
+
+  .main_nav.responsive a {
+    display: block;
+  }  */
 
   header {
     position: relative;
   }
+
   img {
     position: relative;
     max-width: 100%;
     height: auto;
+  }
+
+  #not_active {
+    display: block;
   }
 
   .cent_in_img {
@@ -32,37 +215,30 @@ body {
     font-weight: bold;
   }
 
-  .main_nav {
-    margin: 0.5em;
-    background-color: #0b090a;
-    color: white;
+  header .cent_in_img p {
+    /* background-color: #0b090a;
+    opacity: 0.8;
+    padding: 0.1em; */
+  }
+
+  .content1 {
+    margin: 0.2em;
+  }
+
+  footer {
     text-align: center;
+    color: #fafdff;
+    font-size: 0.6em;
+    margin: 0.2em;
+    padding: 0.4em;
   }
 
-  .main_nav a:hover {
-    background-color: #18728c;
-  }
-
-  .main_nav #active {
-    background-color: #18728c;
-  }
-
-  .main_nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  footer,
-  .co,
+  footer .co,
   .fab {
     text-align: center;
     color: #fafdff;
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin: 0.2em;
-    padding: 0.4em;
   }
 }
 

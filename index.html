@@ -9,12 +9,43 @@
 
   <body>
     <div class="container">
-      <img class="cont-img"
-      src="assets/images/main_index.jpg"
-      alt="Logo Games to try"
-    />
+      <nav>
+        <div class="main_nav">
+          <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+            <i class="fas fa-bars"></i
+          ></a>
+          <a class="active" href="index.html">Home</a>
+          <div id="not_active">
+            <a href="">Darts</a>
+            <a href="">20 to 1</a>
+            <a href="">Bulls Eye to 40</a>
+            <a href="">Tetris</a>
+            <a href="">Rommé</a>
+            <a href="">Erdnussbutter</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="container">
+        <nav>
+          <div class="main_nav" id="my_main_nav">
+            <a href="index.html" id="active">Home</a>
+            <a href="">Darts</a>
+            <a href="">20 to 1</a>
+            <a href="">Bulls Eye to 40</a>
+            <a href="">Tetris</a>
+            <a href="">Rommé</a>
+            <a href="">Erdnussbutter</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fas fa-bars"></i
+            ></a>
+          </div>
+        </nav>
+         -->
+
       <header>
         <img
+          id="main_img"
           src="assets/images/main_index.jpg"
           alt="Logo Games to try"
         />
@@ -23,23 +54,11 @@
         </div>
       </header>
 
-      <nav>
-   
-        <div class="main_nav">
-            <a href="index.html" id="active">Home</a>
-            <a href="">Darts</a>
-            <a href="">20 to 1</a>
-            <a href="">Bulls Eye to 40</a>
-            <a href="">Tetris</a>
-            <a href="">Rommé</a>
-            <a href="">Erdnussbutter</a>
-          </a>
-        </div>
-      </nav>
-
       <content class="content1">
         <p>
-          Here we could welcome the visitors of our site and let them know what
+          <span style="font-size: xx-large; color: red; font-weight: bold"
+            >H</span
+          >ere we could welcome the visitors of our site and let them know what
           they can explore here.
         </p>
       </content>
@@ -52,11 +71,12 @@
           <li>Perhaps a way to document own game experiences or results?</li>
         </ol>
       </content>
-      
+
       <footer>
-      
+        <br />
         contact | about | mission | 26.11.2021
         <br />
+
         <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
         <a href="https://instagram.com"
           ><i class="fab fa-instagram-square"></i
@@ -72,5 +92,5 @@
   <script
     src="https://kit.fontawesome.com/dca1444e07.js"
     crossorigin="anonymous"
-  ></script> 
+  ></script>
 </html>
