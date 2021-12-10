@@ -139,20 +139,17 @@ body {
   margin: 0.4em;
   position: relative;
 }
-
+/* ################################################################################
+---            MOBILE  
+################################################################################ */
 @media screen and (min-width: 0em) {
   .main_nav {
     background-color: #0b090a;
     color: white;
     text-align: left;
     text-decoration: none;
-
     padding-bottom: 0.4em;
   }
-  /*   
-  .main_nav a:hover {
-    background-color: #18728c;
-  } */
 
   .main_nav a {
     color: white;
@@ -162,15 +159,14 @@ body {
     font-weight: bold;
     font-size: 1.2em;
   }
-  /* 
-  .main_nav a:not(:first-child) {
-    display: none;
-  }
-*/
 
   .main_nav .active {
     color: red;
     border-left: 3px solid red;
+  }
+
+  .main_nav a:hover {
+    color: red;
   }
 
   .main_nav .icon {
@@ -179,17 +175,9 @@ body {
     top: 0;
   }
 
-  /*
-  .main_nav a.icon {
-    float: right;
-    display: block;
-
-    font-size: 1.6em;
+  .icon a:hover {
+    color: red;
   }
-
-  .main_nav.responsive a {
-    display: block;
-  }  */
 
   header {
     position: relative;
@@ -205,7 +193,9 @@ body {
     display: block;
   }
 
-  .cent_in_img {
+  .cent_in_img a {
+    color: white;
+    text-decoration: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -215,12 +205,9 @@ body {
     font-weight: bold;
   }
 
-  header .cent_in_img p {
-    /* background-color: #0b090a;
-    opacity: 0.8;
-    padding: 0.1em; */
+  .cent_in_img a:hover {
+    color: red;
   }
-
   .content1 {
     margin: 0.2em;
   }
@@ -237,19 +224,29 @@ body {
   .fab {
     text-align: center;
     color: #fafdff;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 0.2em;
+  }
+
+  footer:hover .co:hover,
+  .fab:hover {
+    color: red;
   }
 }
 
-@media screen and (min-width: 430px) {
+/* ################################################################################
+---            500 px
+################################################################################ */
+@media screen and (min-width: 500px) {
   .container {
     display: grid;
     grid-gap: 0.6em;
     grid-template-columns: 30%;
   }
 
-  .cent_in_img {
+  .cent_in_img a {
+    color: white;
+    text-decoration: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -274,6 +271,10 @@ body {
     opacity: 0.8;
   }
 
+  nav .icon {
+    display: none;
+  }
+
   .content1 {
     grid-row: 2/3;
     grid-column: 2/4;
@@ -292,21 +293,43 @@ body {
   }
   footer {
     grid-row: 4/5;
-    grid-column: 1/4;
+    grid-column: 1/2;
     background-color: #0b090a;
     opacity: 0.8;
   }
 }
 
-@media screen and (min-width: 800px) {
+/* ################################################################################
+---            1200 px
+################################################################################ */
+@media screen and (min-width: 1200px) {
   .container {
     display: grid;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 0.6em;
+    grid-template-columns: 30%;
+  }
+
+  .cent_in_img a {
+    color: white;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 50%;
   }
   img {
     position: static;
     max-width: 100%;
   }
-  .cent_in_img {
+  /* .cent_in_img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -315,7 +338,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     left: 50%;
-  }
+  } */
 
   header {
     grid-row: 1/2;
