@@ -190,7 +190,7 @@ body {
   }
 
   #not_active {
-    display: block;
+    display: none;
   }
 
   .cent_in_img a {
@@ -220,6 +220,16 @@ body {
     padding: 0.4em;
   }
 
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: red;
+    font-size: 2em;
+  }
+
   footer .co,
   .fab {
     text-align: center;
@@ -241,7 +251,7 @@ body {
   .container {
     display: grid;
     grid-gap: 0.6em;
-    grid-template-columns: 30%;
+    grid-template-columns: 200px;
   }
 
   .cent_in_img a {
@@ -273,6 +283,10 @@ body {
 
   nav .icon {
     display: none;
+  }
+
+  #not_active {
+    display: block;
   }
 
   .content1 {
@@ -310,7 +324,7 @@ body {
   .container {
     display: grid;
     grid-gap: 0.6em;
-    grid-template-columns: 30%;
+    grid-template-columns: 200px;
   }
 
   .cent_in_img a {
@@ -329,16 +343,6 @@ body {
     position: static;
     max-width: 100%;
   }
-  /* .cent_in_img {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    left: 50%;
-  } */
 
   header {
     grid-row: 1/2;
@@ -349,6 +353,10 @@ body {
   nav {
     grid-row: 2/4;
     grid-column: 1/2;
+  }
+
+  #not_active {
+    display: block;
   }
 
   .content1 {
@@ -362,6 +370,6 @@ body {
   }
   footer {
     grid-row: 4/5;
-    grid-column: 1/4;
+    grid-column: 1/2;
   }
 }
