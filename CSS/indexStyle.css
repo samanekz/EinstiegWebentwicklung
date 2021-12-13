@@ -209,7 +209,11 @@ body {
     color: red;
   }
   .content1 {
-    margin: 0.2em;
+    padding: 2em;
+  }
+
+  .content2 {
+    padding: 2em;
   }
 
   footer {
@@ -218,6 +222,7 @@ body {
     font-size: 0.6em;
     margin: 0.2em;
     padding: 0.4em;
+    height: 8em;
   }
 
   footer a {
@@ -294,7 +299,7 @@ body {
     grid-column: 2/4;
     position: relative;
     background-color: #0b090a;
-    padding: 0.2em;
+    padding: 0.8em;
     opacity: 0.8;
   }
 
@@ -302,9 +307,22 @@ body {
     grid-row: 3/4;
     grid-column: 2/4;
     background-color: #0b090a;
-    padding: 0.2em;
+    padding: 0.8em;
     opacity: 0.8;
   }
+
+  .content3 {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    background-color: #0b090a;
+    padding: 0.8em;
+    opacity: 0.8;
+    display: flexbox;
+  }
+
+  .gallery {
+  }
+
   footer {
     grid-row: 4/5;
     grid-column: 1/2;
