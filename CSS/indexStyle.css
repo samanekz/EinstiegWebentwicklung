@@ -209,11 +209,41 @@ body {
     color: red;
   }
   .content1 {
-    padding: 2em;
+    padding: 4em;
   }
 
   .content2 {
+    padding: 4em;
+  }
+
+  .content3 {
+    margin: 0.8em;
     padding: 2em;
+    opacity: 0.8;
+    max-width: 100%;
+    max-height: auto;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .flexbox_box {
+    width: 80%;
+    margin: auto;
+  }
+
+  .gallery {
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gallery .text_in_gallery {
+    position: absolute;
+    background-color: #0b090a;
+    top: 50%;
+    padding: 0.8em;
+    opacity: 0.8;
+    z-index: 1;
   }
 
   footer {
@@ -250,9 +280,9 @@ body {
 }
 
 /* ################################################################################
----            500 px
+---            700 px
 ################################################################################ */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .container {
     display: grid;
     grid-gap: 0.6em;
@@ -312,15 +342,37 @@ body {
   }
 
   .content3 {
-    grid-row: 4/5;
+    grid-row: 4/6;
     grid-column: 2/4;
     background-color: #0b090a;
     padding: 0.8em;
     opacity: 0.8;
-    display: flexbox;
+    display: flex;
+    max-width: 100%;
+    align-items: stretch;
+
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .flexbox_box {
+    width: 80%;
+    margin: auto;
   }
 
   .gallery {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .gallery .text_in_gallery {
+    position: absolute;
+    top: 50%;
+    padding: 0.8em;
+    opacity: 0.8;
+    z-index: 1;
   }
 
   footer {
