@@ -226,7 +226,7 @@ body {
     justify-content: center; */
   }
 
-  .flexbox_box {
+  .flexbox_container {
     width: 80%;
     margin: auto;
   }
@@ -280,9 +280,9 @@ body {
 }
 
 /* ################################################################################
----            700 px
+---            500 px
 ################################################################################ */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
   .container {
     display: grid;
     grid-gap: 0.6em;
@@ -345,26 +345,23 @@ body {
     grid-row: 4/6;
     grid-column: 2/4;
     background-color: #0b090a;
-    padding: 0.8em;
-    opacity: 0.8;
-    display: flex;
-    max-width: 100%;
-    align-items: stretch;
-
-    /* display: flex;
-    justify-content: center; */
   }
 
-  .flexbox_box {
-    width: 80%;
-    margin: auto;
+  .flexbox_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 100%;
+    align-items: center;
   }
 
   .gallery {
     position: relative;
     text-align: center;
     align-items: center;
-    overflow: scroll;
+    overflow: hidden;
+    width: 200px;
   }
 
   .gallery .text_in_gallery {
