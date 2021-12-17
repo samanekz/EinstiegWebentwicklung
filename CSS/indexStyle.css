@@ -245,6 +245,11 @@ body {
     opacity: 0.8;
     z-index: 1;
   }
+  .firstLetter{
+    font-size: xx-large; 
+    color: red; 
+    font-weight: bold
+  }
 
   footer {
     text-align: center;
@@ -267,7 +272,6 @@ body {
 
   footer .co,
   .fab {
-    text-align: center;
     color: #fafdff;
     font-size: 1.4em;
     margin: 0.2em;
