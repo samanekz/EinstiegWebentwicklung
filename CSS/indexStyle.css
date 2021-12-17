@@ -224,6 +224,11 @@ body {
   .content1 {
     margin: 0.2em;
   }
+  .firstLetter{
+    font-size: xx-large; 
+    color: red; 
+    font-weight: bold
+  }
 
   footer {
     text-align: center;
@@ -235,7 +240,6 @@ body {
 
   footer .co,
   .fab {
-    text-align: center;
     color: #fafdff;
     font-size: 1.2em;
     margin: 0.2em;
