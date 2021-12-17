@@ -25,3 +25,7 @@ Können wir **interessante** _Spiele_ finden?
 Tomorrow never dies /
 
 Erdnussbutterbärchen
+
+# to do:
+
+Index Full screen image background how to w3 school
